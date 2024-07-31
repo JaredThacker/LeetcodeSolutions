@@ -1,4 +1,4 @@
-package Easy;
+package LeetCode75;
 
 public class MergeStringsAlternately {
     public String mergeAlternately(String word1, String word2) {
