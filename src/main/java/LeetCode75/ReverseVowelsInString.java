@@ -1,35 +1,31 @@
 package LeetCode75;
 
+import java.util.Set;
+
 public class ReverseVowelsInString {
     public static String reverseVowels(String s) {
-        String[] split = s.split("");
-        int leftPoint = 0;
-        int rightPoint = split.length - 1;
-        for (int i = leftPoint; i < split.length; i++){
-            if ("AEIOUaeiou".contains(split[i]) || "AEIOUaeiou".contains(split[rightPoint])){
-                for (int j = rightPoint; j > 0; j--){
-                    if ("AEIOUaeiou".contains(split[j]) && "AEIOUaeiou".contains(split[i])){
-                        String tmp = split[j];
-                        split[j] = split[i];
-                        split[i] = tmp;
-                        break;
-                    } else {
-                        for (int k = 0; k < split.length; k++){
-                            if ("AEIOUaeiou".contains(split[k]) && "AEIOUaeiou".contains(split[j])) {
-                                String tmp = split[j];
-                                split[j] = split[k];
-                                split[k] = tmp;
-                                break;
-                            }
-                        }
-                    }
-                }
+        char[] words = s.toCharArray();
+        int leftPointer = 0;
+        int rightPointer = s.length()-1;
+        Set<Character> set = Set.of('a','e','i','o','u','A','E','I','O','U');
 
+        while(leftPointer < rightPointer) {
+            while(leftPointer < rightPointer && !set.contains(words[leftPointer])) {
+                leftPointer++;
             }
-            leftPoint++;
-            rightPoint--;
+            while(leftPointer < rightPointer && !set.contains(words[rightPointer])) {
+                rightPointer--;
+            }
+            swapVowels(words, leftPointer, rightPointer);
+            leftPointer++;
+            rightPointer--;
         }
-        String result = String.join("", split);
-        return result;
+        return new String(words);
+    }
+
+    private static void swapVowels(char[] arr, int left, int right) {
+        char temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
     }
 }
