@@ -2,14 +2,11 @@ package LeetCode75;
 
 public class ReverseWordsInString {
     public String reverseWords(String s) {
-        String[] words = s.split(" ");
-        String[] newSentence = new String[words.length];
-        int i = 0;
-        for (int j = words.length - 1; j >= 0; j--){
-            newSentence[i] = words[j];
-            i++;
+        String[] words = s.trim().split("\\s+");
+        StringBuilder sb =new StringBuilder();
+        for (int i = words.length - 1; i >= 0; i--){
+            sb.append(words[i]).append(" ");
         }
-        String sent = String.join(" ", newSentence);
-        return sent.replaceAll("\\s+", " ").trim();
+        return sb.toString().trim();
     }
 }
