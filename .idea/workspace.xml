@@ -33,6 +33,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.GroupAnagramsTest.testGroupAnagrams.executor": "Debug",
     "JUnit.ReverseVowelsInString.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -47,7 +48,17 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GroupAnagramsTest.testGroupAnagrams">
+    <configuration name="GroupAnagramsTest.testGroupAnagrams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetcodeSolutions" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GroupAnagramsTest" />
+      <option name="METHOD_NAME" value="testGroupAnagrams" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReverseVowelsInString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetcodeSolutions" />
       <option name="PACKAGE_NAME" value="" />
@@ -59,6 +70,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GroupAnagramsTest.testGroupAnagrams" />
         <item itemvalue="JUnit.ReverseVowelsInString" />
       </list>
     </recent_temporary>
@@ -82,10 +94,23 @@
       <workItem from="1722654400732" duration="2006000" />
       <workItem from="1722923264514" duration="222000" />
       <workItem from="1722925583740" duration="5587000" />
+      <workItem from="1722988231030" duration="720000" />
+      <workItem from="1723039709289" duration="4604000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/GroupAnagramsTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
