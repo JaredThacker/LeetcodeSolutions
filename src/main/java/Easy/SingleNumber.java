@@ -15,7 +15,7 @@ public class SingleNumber {
                 }
             }
             Integer distinct = 0;
-            for (Map.Entry<Integer, Integer> entry : freq.entrySet()) {
+            for (var entry : freq.entrySet()) {
                 Integer value = entry.getValue();
                 if (value.equals(1)){
                     distinct = entry.getKey();
