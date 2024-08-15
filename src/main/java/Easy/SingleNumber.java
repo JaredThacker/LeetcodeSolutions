@@ -10,7 +10,9 @@ public class SingleNumber {
     }
 
     static int xor(int n,int[] nums){
-        if(n >= nums.length) return 0;
+        if(n >= nums.length) {
+            return 0;
+        }
         return nums[n] ^ xor(n+1,nums);
     }
 
